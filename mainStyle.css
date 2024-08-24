@@ -1,0 +1,48 @@
+table{
+border-collapse: collapse;
+}
+
+thead,tr td:first-child{
+background: #eee;
+}
+tr td:first-child,
+tr th:first-child{
+
+}
+tbody{
+
+}
+th,td{
+    border: 1px solid #ccc;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    width: 64px;
+    height: 20px;
+}
+input{
+    border: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+
+    &:focus{
+        outline: 2px solid blue;
+        border-radius: 2px;
+        opacity: 1;
+    }
+}
+
+span,input{
+    position: absolute;
+    inset: 0;
+}
+
+.selected {
+    background-color:  rgb(93, 153, 245);
+}
+th.selected{
+    background-color:  rgb(45, 102, 187);
+
+}
